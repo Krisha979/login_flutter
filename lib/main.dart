@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget{
         }
         
         class LoginPageState extends State<LoginPage> {
+
           @override
           Widget build(BuildContext context) {
             return new Scaffold(
@@ -64,15 +65,45 @@ class MyApp extends StatelessWidget{
                               keyboardType: TextInputType.text,
                               obscureText: true,  //obsecure text by not showing it
                             ),
+                            new Column(
 
+                              children: <Widget>[
+                                RaisedButton(
+                                child: Text("Login"),
+                                 onPressed: sendToDatabase,
+                                  color: Colors.red,
+                                  textColor: Colors.white,
+                                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                  splashColor: Colors.grey,
+                                ),
+                                ]
+                            ),
+                            new Column(
+
+                              children: <Widget>[
+                                RaisedButton(
+                                child: Text("sign up"),
+                                 onPressed: sendToDatabase,
+                                  color: Colors.red,
+                                  textColor: Colors.white,
+                                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                  splashColor: Colors.grey,
+                                ),
+                                ]
+                            ),
+
+                            
                           ],
-                        ),
-                      ),
                     )
-                  ],
-                )
+                      )
+                      )                 
+                       ]
+                ),
               ],
-            )
+                    )
             );
 }
+}
+void sendToDatabase(){
+
 }
