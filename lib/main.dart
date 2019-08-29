@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import 'package:flutter/rendering.dart';
+import 'sign_in.dart';
+import 'upload_image.dart';
+void main()=> runApp(new MyApp());
+=======
+//import 'package:flutter/rendering.dart';
+>>>>>>> 09b9092745f918e1f3029f94de038edd8580ba2d
 import 'x.dart';
 //import 'login.dart';
 
@@ -11,6 +21,7 @@ void main()=> runApp(new MaterialApp(
   }
 ));
 
+>>>>>>> f594e1fca93d87351f9ed85f8db055ae85584212
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -89,6 +100,7 @@ class MyApp extends StatelessWidget{
                             ),
                             new Column(
 
+<<<<<<< HEAD
                               children: <Widget>[
                                 RaisedButton(
                                 child: Text("sign up"),
@@ -96,10 +108,36 @@ class MyApp extends StatelessWidget{
                                     Navigator.push(context, MaterialPageRoute(builder: (context) => SecondPage()),
                                  );
                                 },
+=======
+<<<<<<< HEAD
+                              children: <Widget>[
+                                RaisedButton(
+                                child: Text("Login"),
+                                 onPressed: (){
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=> CameraApp()),
+                                   );
+                                 },
                                   color: Colors.red,
                                   textColor: Colors.white,
                                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   splashColor: Colors.grey,
+                                ),
+                                ]
+                            ),
+                            new Column(
+                                children: <Widget>[
+                                RaisedButton(
+                                child: Text("sign up"),
+                                 onPressed: () {
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=> SecondPage()),
+                                   );
+                                 },
+>>>>>>> 09b9092745f918e1f3029f94de038edd8580ba2d
+                                  color: Colors.red,
+                                  textColor: Colors.white,
+                                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                  splashColor: Colors.grey,
+<<<<<<< HEAD
                                ),
                              ]
                             ),
@@ -115,6 +153,13 @@ class MyApp extends StatelessWidget{
 }
 }      
         
+=======
+                                ),
+                                ]
+                            ),
+=======
+>>>>>>> 09b9092745f918e1f3029f94de038edd8580ba2d
 
+>>>>>>> f594e1fca93d87351f9ed85f8db055ae85584212
 
 
