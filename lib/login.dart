@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'x.dart';
-import 'main.dart';
-class LoginPageState extends State<LoginPage> {
+class LoginPage extends StatelessWidget{
 
           @override
           Widget build(BuildContext context) {

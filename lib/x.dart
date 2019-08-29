@@ -72,7 +72,7 @@ class SecondPage extends StatelessWidget {
                               children: <Widget>[
                                 RaisedButton(
                                 child: Text("Submit"),
-                                 onPressed: () {Navigator.of(context).pushNamed("/SecondPage");},
+                                 onPressed: () {},
                                   color: Colors.red,
                                   textColor: Colors.white,
                                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
