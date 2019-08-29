@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'sign_in.dart';
+import 'upload_image.dart';
 void main()=> runApp(new MyApp());
 class MyApp extends StatelessWidget{
   @override
@@ -70,7 +72,10 @@ class MyApp extends StatelessWidget{
                               children: <Widget>[
                                 RaisedButton(
                                 child: Text("Login"),
-                                 onPressed: sendToDatabase,
+                                 onPressed: (){
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=> CameraApp()),
+                                   );
+                                 },
                                   color: Colors.red,
                                   textColor: Colors.white,
                                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
@@ -79,11 +84,13 @@ class MyApp extends StatelessWidget{
                                 ]
                             ),
                             new Column(
-
-                              children: <Widget>[
+                                children: <Widget>[
                                 RaisedButton(
                                 child: Text("sign up"),
-                                 onPressed: sendToDatabase,
+                                 onPressed: () {
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=> SecondPage()),
+                                   );
+                                 },
                                   color: Colors.red,
                                   textColor: Colors.white,
                                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
